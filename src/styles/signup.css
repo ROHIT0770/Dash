@@ -1,0 +1,48 @@
+div.signup-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+}
+
+@media screen and (max-width: 1024px) {
+  div.signup-wrapper {
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr;
+  }
+
+  div.signup-wrapper section.details {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  div.oauth--wrapper span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  div.form {
+    min-width: 80%;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  div.signup-wrapper section.details {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  div.oauth--wrapper {
+    flex-direction: column;
+  }
+
+  section.top--section {
+    width: 80%;
+  }
+
+  form.login--details {
+    min-width: 80%;
+  }
+}

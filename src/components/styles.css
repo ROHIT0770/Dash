@@ -1,0 +1,48 @@
+.chartData-styles{
+    margin-top: 120px;
+}
+
+.chart-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.colored-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .colored-list li {
+    position: relative;
+    padding-left: 20px; /* Add some padding for the dot */
+    margin-bottom: 10px;
+  }
+  
+  .colored-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%; /* Adjust to vertically center the dot */
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  
+  .colored-list li:nth-child(1)::before {
+    background-color: #98D89E; /* Color for the first dot */
+  }
+  
+  .colored-list li:nth-child(2)::before {
+    background-color:  #F6DC7D;
+    ; /* Color for the second dot */
+  }
+  
+  .colored-list li:nth-child(3)::before {
+    background-color: #EE8484; /* Color for the third dot */
+  }
+  .part{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
